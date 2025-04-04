@@ -13,11 +13,11 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-2 text-muted-foreground mt-0.5" />
-                <span>Nybrogatan 16, 554 39 Jönköping, Sweden</span>
+                <span>Emmabodavägen 20, 382 45 Nybro, Sweden</span>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 mr-2 text-muted-foreground" />
-                <span>+46 (0)36-193371</span>
+                <span>+46 (0)491-129-50</span>
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 mr-2 text-muted-foreground" />
@@ -39,7 +39,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><Link to="/" className="hover:text-primary transition-colors">Home</Link></li>
               <li><Link to="/about" className="hover:text-primary transition-colors">About the Museum</Link></li>
-              <li><Link to="#" className="hover:text-primary transition-colors">Exhibits & Collections</Link></li>
+              <li><Link to="/gallery" className="hover:text-primary transition-colors">Exhibits & Gallery</Link></li>
               <li><Link to="#" className="hover:text-primary transition-colors">Tickets & Admission</Link></li>
               <li><Link to="#" className="hover:text-primary transition-colors">Events</Link></li>
               <li><Link to="/contact" className="hover:text-primary transition-colors">Contact Us</Link></li>

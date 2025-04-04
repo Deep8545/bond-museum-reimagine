@@ -4,6 +4,7 @@ import { ChevronRight, Calendar, Car, Ticket, Clock, MapPin, Camera } from 'luci
 import { Button } from '@/components/ui/button';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import ExhibitsCarousel from '@/components/ExhibitsCarousel';
 
 const Index = () => {
   return (
@@ -73,14 +74,18 @@ const Index = () => {
               Discover our collection of iconic James Bond memorabilia from over 60 years of cinematic history.
             </p>
           </div>
+
+          <div className="mb-16">
+            <ExhibitsCarousel />
+          </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Exhibit Card 1 */}
             <div className="group bg-card rounded-lg overflow-hidden border border-border hover:border-primary transition-colors duration-300">
               <div className="relative h-60 overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1460574283810-2aab119d8511" 
-                  alt="Aston Martin DB5" 
+                  src="/lovable-uploads/76bc8432-a51e-4603-93f7-4ce976c1da6e.png" 
+                  alt="BMW Z3 from James Bond films" 
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
@@ -91,9 +96,9 @@ const Index = () => {
                   <Car className="h-5 w-5 text-primary" />
                 </div>
                 <p className="text-muted-foreground mb-4">
-                  From the legendary Aston Martin DB5 to submersible Lotus Esprit, explore Bond's most famous cars.
+                  From the legendary Aston Martin DB5 to BMW Z3 from GoldenEye, explore Bond's most famous cars.
                 </p>
-                <Link to="#" className="text-primary flex items-center text-sm font-medium hover:underline">
+                <Link to="/gallery" className="text-primary flex items-center text-sm font-medium hover:underline">
                   VIEW COLLECTION <ChevronRight className="ml-1 h-4 w-4" />
                 </Link>
               </div>
@@ -103,8 +108,8 @@ const Index = () => {
             <div className="group bg-card rounded-lg overflow-hidden border border-border hover:border-primary transition-colors duration-300">
               <div className="relative h-60 overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5" 
-                  alt="Bond Gadgets" 
+                  src="/lovable-uploads/92d895a7-2a6f-4132-b517-a9d53803a366.png" 
+                  alt="007 Leica Camera" 
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
@@ -117,7 +122,7 @@ const Index = () => {
                 <p className="text-muted-foreground mb-4">
                   Discover the ingenious spy gadgets that helped 007 save the world time and again.
                 </p>
-                <Link to="#" className="text-primary flex items-center text-sm font-medium hover:underline">
+                <Link to="/gallery" className="text-primary flex items-center text-sm font-medium hover:underline">
                   VIEW COLLECTION <ChevronRight className="ml-1 h-4 w-4" />
                 </Link>
               </div>
@@ -127,8 +132,8 @@ const Index = () => {
             <div className="group bg-card rounded-lg overflow-hidden border border-border hover:border-primary transition-colors duration-300">
               <div className="relative h-60 overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1470813740244-df37b8c1edcb" 
-                  alt="Bond Movie Scripts" 
+                  src="/lovable-uploads/fe1d59b6-ed7e-4137-8245-76a99caa4290.png" 
+                  alt="007 Themed Guitar" 
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
@@ -139,9 +144,9 @@ const Index = () => {
                   <Calendar className="h-5 w-5 text-primary" />
                 </div>
                 <p className="text-muted-foreground mb-4">
-                  Original scripts, storyboards, and production materials from the James Bond film series.
+                  Original collectibles, limited editions, and rare merchandise from the James Bond film series.
                 </p>
-                <Link to="#" className="text-primary flex items-center text-sm font-medium hover:underline">
+                <Link to="/gallery" className="text-primary flex items-center text-sm font-medium hover:underline">
                   VIEW COLLECTION <ChevronRight className="ml-1 h-4 w-4" />
                 </Link>
               </div>
@@ -149,7 +154,9 @@ const Index = () => {
           </div>
           
           <div className="text-center mt-12">
-            <Button variant="outline" size="lg">VIEW ALL EXHIBITS</Button>
+            <Button variant="outline" size="lg" asChild>
+              <Link to="/gallery">VIEW ALL EXHIBITS</Link>
+            </Button>
           </div>
         </div>
       </section>
@@ -168,14 +175,14 @@ const Index = () => {
             <div className="bg-card rounded-lg p-8 border border-border">
               <h3 className="text-2xl font-heading font-bold mb-4">Getting Here</h3>
               <p className="text-muted-foreground mb-6">
-                The 007 Museum is located in central Jönköping, easily accessible by public transportation and private vehicles.
+                The 007 Museum is located in central Nybro, easily accessible by public transportation and private vehicles.
               </p>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
                   <MapPin className="h-5 w-5 text-primary mt-0.5" />
                   <div>
                     <p className="font-medium">Address</p>
-                    <p className="text-muted-foreground">Nybrogatan 16, 554 39 Jönköping, Sweden</p>
+                    <p className="text-muted-foreground">Emmabodavägen 20, 382 45 Nybro, Sweden</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -226,7 +233,7 @@ const Index = () => {
       
       {/* Call to Action */}
       <section className="py-20 relative">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1470813740244-df37b8c1edcb')] bg-cover bg-center bg-fixed">
+        <div className="absolute inset-0 bg-[url('/lovable-uploads/bdf4f5f3-fd68-4cf6-b4af-628bbbbea28b.png')] bg-cover bg-center bg-fixed">
           <div className="absolute inset-0 bg-background/80 backdrop-blur-sm"></div>
         </div>
         

@@ -53,7 +53,7 @@ const Navbar = () => {
                 <Link to="#" className="block px-4 py-2 text-sm hover:bg-accent">Wardrobe</Link>
               </div>
             </div>
-            <Link to="#" className="spy-link text-sm font-medium">GALLERY</Link>
+            <Link to="/gallery" className="spy-link text-sm font-medium">GALLERY</Link>
             <Link to="/contact" className="spy-link text-sm font-medium">CONTACT</Link>
             <Button variant="default" size="sm">BOOK TICKETS</Button>
           </div>
@@ -83,7 +83,7 @@ const Navbar = () => {
                   <Link to="#" className="block text-sm py-1" onClick={toggleMenu}>Wardrobe</Link>
                 </div>
               </div>
-              <Link to="#" className="text-sm font-medium py-2" onClick={toggleMenu}>GALLERY</Link>
+              <Link to="/gallery" className="text-sm font-medium py-2" onClick={toggleMenu}>GALLERY</Link>
               <Link to="/contact" className="text-sm font-medium py-2" onClick={toggleMenu}>CONTACT</Link>
               <Button variant="default" size="sm" className="w-full">BOOK TICKETS</Button>
             </div>
