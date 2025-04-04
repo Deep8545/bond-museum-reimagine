@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ExhibitsCarousel from "@/components/ExhibitsCarousel";
@@ -87,6 +88,39 @@ const Gallery = () => {
       title: "'The Other Fellow' Exhibition",
       description: "A special exhibition featuring the documentary about real men named James Bond.",
       category: [CATEGORY_MEMORABILIA],
+    },
+    // New images from the second batch
+    {
+      id: 9,
+      src: "/lovable-uploads/03032bcc-1876-4df1-bef8-44609dc8f4c1.png",
+      alt: "Aston Martin DB5 from Skyfall",
+      title: "Iconic Aston Martin DB5",
+      description: "The legendary Aston Martin DB5 featured in multiple Bond films including Skyfall and No Time To Die.",
+      category: [CATEGORY_VEHICLES],
+    },
+    {
+      id: 10,
+      src: "/lovable-uploads/b197d2f3-d899-4d84-988d-10481fafa152.png",
+      alt: "The Golden Gun prop",
+      title: "The Man with the Golden Gun Weapon",
+      description: "The famous golden gun from the 1974 film 'The Man with the Golden Gun' starring Roger Moore.",
+      category: [CATEGORY_GADGETS],
+    },
+    {
+      id: 11,
+      src: "/lovable-uploads/81b70d35-93a4-455d-8b1c-765b58bef4e4.png",
+      alt: "Bond actors at museum event",
+      title: "Bond Actors Special Exhibition",
+      description: "Special museum event featuring actors from the James Bond franchise discussing their experiences.",
+      category: [CATEGORY_MEMORABILIA],
+    },
+    {
+      id: 12,
+      src: "/lovable-uploads/d5166ac4-8545-45fb-a840-e80eeffda46f.png",
+      alt: "Triumph motorcycle exhibition",
+      title: "No Time To Die Motorcycle",
+      description: "The Triumph motorcycle from 'No Time To Die' with actors and promotional materials on display.",
+      category: [CATEGORY_VEHICLES],
     },
   ];
 
