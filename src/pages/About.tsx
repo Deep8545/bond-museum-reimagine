@@ -12,7 +12,7 @@ const About = () => {
       
       {/* Hero Section */}
       <section className="relative pt-32 pb-20">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5')] bg-cover bg-top">
+        <div className="absolute inset-0 bg-[url('/lovable-uploads/8c25986d-8b02-4d4b-8ad5-bbc19d95acf4.png')] bg-cover bg-top">
           <div className="absolute inset-0 bg-background/85 backdrop-blur-sm"></div>
         </div>
         
@@ -51,7 +51,7 @@ const About = () => {
             <div className="relative">
               <div className="bg-card rounded-lg overflow-hidden border border-border">
                 <img 
-                  src="https://images.unsplash.com/photo-1500673922987-e212871fec22" 
+                  src="/lovable-uploads/dbe945ef-58be-4174-a444-d8c037ab5b35.png" 
                   alt="007 Museum Exterior" 
                   className="w-full h-96 object-cover"
                 />
@@ -133,7 +133,7 @@ const About = () => {
             <div className="bg-card rounded-lg overflow-hidden border border-border">
               <div className="h-80">
                 <img 
-                  src="https://images.unsplash.com/photo-1470813740244-df37b8c1edcb" 
+                  src="/lovable-uploads/d339edcb-b0b9-44ec-830f-c11066a919c4.png" 
                   alt="Gunnar Schäfer" 
                   className="w-full h-full object-cover"
                 />
@@ -167,7 +167,7 @@ const About = () => {
             <div className="bg-card rounded-lg overflow-hidden border border-border">
               <div className="h-80">
                 <img 
-                  src="https://images.unsplash.com/photo-1460574283810-2aab119d8511" 
+                  src="/lovable-uploads/3b41fa86-02cc-4532-8a00-2767db555089.png" 
                   alt="Maria Johansson" 
                   className="w-full h-full object-cover"
                 />
@@ -201,7 +201,7 @@ const About = () => {
             <div className="bg-card rounded-lg overflow-hidden border border-border">
               <div className="h-80">
                 <img 
-                  src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5" 
+                  src="/lovable-uploads/28fd366c-140d-4405-859c-dedeba0f68fa.png" 
                   alt="Erik Lindberg" 
                   className="w-full h-full object-cover"
                 />
