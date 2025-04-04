@@ -13,7 +13,7 @@ const Index = () => {
       
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1500673922987-e212871fec22')] bg-cover bg-center">
+        <div className="absolute inset-0 bg-[url('/lovable-uploads/fd6d9d66-4cdd-40c5-b3ad-82c23103b5fd.png')] bg-cover bg-center">
           <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/60 to-background/90"></div>
         </div>
         
@@ -233,7 +233,7 @@ const Index = () => {
       
       {/* Call to Action */}
       <section className="py-20 relative">
-        <div className="absolute inset-0 bg-[url('/lovable-uploads/bdf4f5f3-fd68-4cf6-b4af-628bbbbea28b.png')] bg-cover bg-center bg-fixed">
+        <div className="absolute inset-0 bg-[url('/lovable-uploads/15e77be0-9c86-4ff8-a0e2-f3e4d02eb2ac.png')] bg-cover bg-center bg-fixed">
           <div className="absolute inset-0 bg-background/80 backdrop-blur-sm"></div>
         </div>
         
