@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, Clock, CreditCard, Info, Check, ChevronRight } from 'lucide-react';
@@ -263,8 +262,8 @@ const PlanYourVisit = () => {
         </div>
       </section>
       
-      {/* CTA Section */}
-      <section className="py-20 bg-[url('/lovable-uploads/3b41fa86-02cc-4532-8a00-2767db555089.png')] bg-cover bg-center">
+      {/* CTA Section - Updated background image here */}
+      <section className="py-20 bg-[url('/lovable-uploads/f0469ba0-0971-486b-aef6-763122a0d511.png')] bg-cover bg-center">
         <div className="content-container relative">
           <div className="absolute inset-0 bg-background/80 backdrop-blur-sm"></div>
           <div className="relative z-10 text-center max-w-3xl mx-auto">
