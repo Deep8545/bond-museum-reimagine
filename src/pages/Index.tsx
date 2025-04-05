@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { ChevronRight, Calendar, Car, Ticket, Clock, MapPin, Camera } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -26,11 +25,15 @@ const Index = () => {
               Explore the official James Bond Museum, featuring authentic props, vehicles, and gadgets from the legendary spy saga.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="text-md">
-                PLAN YOUR VISIT <ChevronRight className="ml-2 h-4 w-4" />
+              <Button size="lg" className="text-md" asChild>
+                <Link to="/plan-your-visit">
+                  PLAN YOUR VISIT <ChevronRight className="ml-2 h-4 w-4" />
+                </Link>
               </Button>
-              <Button variant="outline" size="lg" className="text-md">
-                EXPLORE EXHIBITS
+              <Button variant="outline" size="lg" className="text-md" asChild>
+                <Link to="/explore-exhibits">
+                  EXPLORE EXHIBITS
+                </Link>
               </Button>
             </div>
           </div>
@@ -194,7 +197,9 @@ const Index = () => {
                   </div>
                 </div>
               </div>
-              <Button className="mt-6">GET DIRECTIONS</Button>
+              <Button className="mt-6" asChild>
+                <Link to="/plan-your-visit">GET DIRECTIONS</Link>
+              </Button>
             </div>
             
             <div className="bg-card rounded-lg p-8 border border-border">
@@ -225,7 +230,9 @@ const Index = () => {
                   <p className="font-medium">120 SEK</p>
                 </div>
               </div>
-              <Button>BOOK TICKETS ONLINE</Button>
+              <Button asChild>
+                <Link to="/plan-your-visit">BOOK TICKETS ONLINE</Link>
+              </Button>
             </div>
           </div>
         </div>
@@ -245,7 +252,9 @@ const Index = () => {
             <p className="text-lg mb-8 text-muted-foreground">
               Join our membership program for exclusive access to special events, preview nights, and behind-the-scenes tours of the 007 Museum.
             </p>
-            <Button size="lg">JOIN THE PROGRAM</Button>
+            <Button size="lg" asChild>
+              <Link to="/plan-your-visit">JOIN THE PROGRAM</Link>
+            </Button>
           </div>
         </div>
       </section>
